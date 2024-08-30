@@ -1,5 +1,5 @@
 # EOS
-
+![logo](https://github.com/EOS-OS/EOS/blob/main/images/EOS%401x.png)
 
 ## Introduction
 
