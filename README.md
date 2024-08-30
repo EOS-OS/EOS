@@ -1,5 +1,4 @@
-# EOS
-![logo](https://github.com/EOS-OS/EOS/blob/main/images/EOS%401x.png)
+# EOS  <img src="https://github.com/EOS-OS/EOS/blob/main/images/EOS%401x.png" width="500" height="300" alt="">
 
 ## Introduction
 
