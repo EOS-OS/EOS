@@ -1,4 +1,4 @@
-# EOS  <img src="https://github.com/EOS-OS/EOS/blob/main/images/EOS%401x.png" width="100" height="100" alt="EOS">
+# <img src="https://github.com/EOS-OS/EOS/blob/main/images/EOS%401x.png" width="130" height="130" alt="EOS">    EOS
 
 ## Introduction
 
