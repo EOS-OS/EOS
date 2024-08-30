@@ -1,4 +1,4 @@
-# EOS![Uploading image.png…]()
+# EOS
 
 
 ## Introduction
