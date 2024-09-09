@@ -28,6 +28,8 @@ We hope `EOS` can unite the strength from different aspects to accelerate robot 
 
 ## Roadmap
 
+![image](https://github.com/user-attachments/assets/f777feb0-62b1-4f14-bc92-b1c953916a93)
+
 1. **Estabiliing a package manager tool for the robot development**
    - [ ] A package image source
    - [ ] A client for package management
@@ -43,9 +45,9 @@ We hope `EOS` can unite the strength from different aspects to accelerate robot 
      - [ ] Adapt Dora
      - [ ] Adapt Ethercat protocol
    - [ ] Adaptation and Optimization for Domestic Chips
-     - [*] X86 Series
-     - [*] ARM Series
-     - [*] Loongarch (Works on the signal CPU core)
+     - [X] X86 Series
+     - [X] ARM Series
+     - [X] Loongarch (Works on the signal CPU core)
      - [ ] RISCV
 3. **Development of upper-layer applications based on the RROS kernel**
    - [ ] Provide a rich API to support application developers in fully leveraging the powerful features of the RROS kernel, accelerating application development and deployment.
