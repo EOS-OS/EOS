@@ -21,7 +21,73 @@ Specifically, there are three important steps:
 
 ## Contributing
 
-[Guidelines for contributing to the project go here.]
+### How to Contribute Your Package to the User Repository
+The EOS user software repository is currently built using the Copr project. If you are already familiar with using Copr, feel free to skip this section and start using the EOS user repository directly.
+#### Preparation
+The EOS user repository is built on the Fedora Copr project. You can refer to [the official Copr documentation](https://docs.pagure.org/copr.copr/index.html) for more detailed guidance on using Copr.
+First, register for a Fedora account via [Fedora Accounts (fedoraproject.org)](https://accounts.fedoraproject.org/).
+Then, visit the user repository [homepage](https://eos.eaishow.com) and log in using your Fedora ID.
+
+<img width="1616" alt="1725976528436" src="https://github.com/user-attachments/assets/5c361a5b-a70f-4ecf-b845-8931689a826c">
+
+After successfully logging in, go to your personal dashboard:
+
+![image-20240910215916777](https://github.com/user-attachments/assets/cc044bcf-f3c8-405c-b0b8-db37d3c5a91d)
+
+#### Create a New Project
+Click the `New Project` button to create a new project. Enter the project name, select the desired build environment (Chroots) for the package, and configure other optional settings as needed.
+
+![image-20240910220838008](https://github.com/user-attachments/assets/09f956e6-768b-40f5-959b-6a98fcac7de4)
+
+After completing the configuration, click `Create` to create the project.
+
+<img width="937" alt="1725977723240" src="https://github.com/user-attachments/assets/dfa92d99-c1f3-4f18-ae67-aa387475c6f9">
+
+#### Build a Package
+On the project homepage, select `Builds` and click `New Build`.
+
+<img width="609" alt="1725978624151" src="https://github.com/user-attachments/assets/13b30b0d-282b-4d22-8516-1d4a8eddbf1d">
+
+Here, we will build the package by directly uploading the `srpm` file. Under the `Upload` section, click the `Browse` button to upload your local `srpm` file. If you're unfamiliar with how to build an `srpm` package, you can refer to this [guide](https://rpm-packaging-guide.github.io/) for more details.
+
+<img width="596" alt="1725978723980" src="https://github.com/user-attachments/assets/049f294f-a810-4852-bdcb-e0c89afd2879">
+
+Select the local `srpm` file and click `Open` to upload.
+
+![image-20240910223352577](https://github.com/user-attachments/assets/d3aff3a2-71b3-4c28-96c7-3f2dd34d116a)
+
+Finally, click `Build` to start building the package.
+
+<img width="620" alt="1725978912129" src="https://github.com/user-attachments/assets/c49afa55-e35d-4b33-8675-e70ea89a8a91">
+
+Build successful.
+
+<img width="628" alt="1725979056196" src="https://github.com/user-attachments/assets/f0bb61f9-5ea7-471b-a30f-aeb9f411c4bd">
+
+Click on the corresponding `Build ID` to view the build results.
+
+<img width="629" alt="1725979186212" src="https://github.com/user-attachments/assets/65a40e03-963f-42b4-8d29-7b7e600a8dfe">
+
+![image-20240910224043177](https://github.com/user-attachments/assets/e52ae6ca-8981-4592-be48-a84b12aa4fb6)
+
+Copr also supports various other methods to build your package. For more details, please refer to [the official documentation](https://docs.pagure.org/copr.copr/index.html).
+
+#### Using Your Personal Repository
+First, return to the project homepage and obtain the repository configuration file for the corresponding version. Click on the version number.
+
+<img width="984" alt="1725979554852" src="https://github.com/user-attachments/assets/93907da0-9d24-4b9f-a419-ca4e87fe91ea">
+
+Copy the link.
+
+<img width="643" alt="1725979632482" src="https://github.com/user-attachments/assets/4e9cb374-ffc9-484a-b763-6d6b169c471f">
+
+Navigate to the `/etc/yum/repos.d/` directory and download the corresponding configuration.
+
+<img width="1608" alt="1725980030845" src="https://github.com/user-attachments/assets/47d9cc03-c223-4683-8e41-f102dcf7dcad">
+
+You can then download the package.
+
+![image-20240910225455708](https://github.com/user-attachments/assets/0dace3b5-feb7-4e7a-9c18-fef782cdf59f)
 
 ## Where you can find us
 
