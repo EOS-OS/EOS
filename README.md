@@ -1,5 +1,11 @@
 # <img src="https://github.com/EOS-OS/EOS/blob/main/images/EOS%401x.png" width="130" height="130" alt="EOS">
 
+--------------------------------------------------------------------------------
+
+[![Zulip chat](https://img.shields.io/badge/chat-on%20zulip-brightgreen)](https://eos24.zulipchat.com/)
+[![en](https://img.shields.io/badge/lang-en-yellow.svg)](https://github.com/EOS-OS/EOS/blob/master/README.md)
+[![zh](https://img.shields.io/badge/lang-中文-yellow.svg)](https://github.com/EOS-OS/EOS/blob/master/README.zh.md)
+
 ## Introduction
 
 **EOS** is an embodied intelligence operating system release based on the dual-kernel real-time kernel [RROS](https://github.com/BUPT-OS/RROS).
@@ -19,7 +25,7 @@ Specifically, there are three important steps:
 
 ## Where you can find us
 
-TODO
+At the [EOS Zulip](https://eos24.zulipchat.com/join/lnwy7yspqiiu4hqqlat45vlv/) or email `eosrros AT gmail.com`.
 
 ## Who are we
 
@@ -28,7 +34,8 @@ We hope `EOS` can unite the strength from different aspects to accelerate robot 
 
 ## Roadmap
 
-![image](https://github.com/user-attachments/assets/f777feb0-62b1-4f14-bc92-b1c953916a93)
+![image](https://github.com/user-attachments/assets/09b1fe96-bae6-4f76-bc76-7f911dbe701e)
+
 
 1. **Estabiliing a package manager tool for the robot development**
    - [ ] A package image source
