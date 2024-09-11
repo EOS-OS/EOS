@@ -92,6 +92,21 @@ You can then download the package.
 
 ![image-20240910225455708](https://github.com/user-attachments/assets/0dace3b5-feb7-4e7a-9c18-fef782cdf59f)
 
+### How to use community packages integrated with ROS
+Currently, we offer a COPR platform for building RPM packages. Support for Deb and other package formats will be added in the future. To install RPM packages, you need to add the EOS repository to your system. Here's an example for Fedora:
+```bash
+sudo wget -O /etc/yum.repos.d/stevenfreeto-hello-eos-fedora-39.repo http://eos.eaishow.com:9250/coprs/stevenfreeto/hello-eos/repo/fedora-39/stevenfreeto-hello-eos-fedora-39.repo
+sudo dnf makecache
+# sudo yum makecache    # or if you use yum
+```
+
+Additionally, you need to add the EOS rosdep to your ROS environment. Edit the rosdep configuration file at `/etc/ros/rosdep/sources.list.d/20-default.list` and append the following line:
+```
+yaml https://raw.githubusercontent.com/EOS-OS/EOS/main/package-manager/rosdep/base.yaml
+```
+
+After these steps, you can use ROS packages that depend on EOS community packages.
+
 ## Where you can find us
 
 At the [EOS Zulip](https://eos24.zulipchat.com/join/lnwy7yspqiiu4hqqlat45vlv/) or email `eosrros AT gmail.com`.

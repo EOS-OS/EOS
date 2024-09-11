@@ -19,6 +19,21 @@
 ## 贡献
 
 [为项目做出贡献的指南将放在这里。]
+### 在ROS中使用EOS仓库的包
+我们目前提供一个 COPR 平台用于构建 RPM 包，未来将支持 Deb 和其他软件包格式。以 Fedora 为例，您可以通过以下步骤将 EOS 仓库添加到系统中：
+
+```bash
+sudo wget -O /etc/yum.repos.d/stevenfreeto-hello-eos-fedora-39.repo http://eos.eaishow.com:9250/coprs/stevenfreeto/hello-eos/repo/fedora-39/stevenfreeto-hello-eos-fedora-39.repo
+sudo dnf makecache
+# sudo yum makecache    # 如果您使用 yum，使用此命令
+```
+
+此外，您还需要将 EOS 的 rosdep 添加到 ROS 环境中。编辑 /etc/ros/rosdep/sources.list.d/20-default.list 配置文件，并添加以下内容：
+
+```bash
+yaml https://raw.githubusercontent.com/EOS-OS/EOS/main/package-manager/rosdep/base.yaml
+```
+当您使用rosdep时，若依赖的包归属于EOS，发行版的包管理器会首先从EOS的源中寻找，若没有找到，则从ROS的源中寻找。
 
 ## 我们在哪里
 
