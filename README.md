@@ -95,8 +95,8 @@ At the [EOS Zulip](https://eos24.zulipchat.com/join/lnwy7yspqiiu4hqqlat45vlv/) o
 
 ## Who are we
 
-We are a group of robotic developers from Research institutes, Schools, and robotics enterprises.
-We hope `EOS` can unite the strength from different aspects to accelerate robot development and shorten the communication path between developers and end users.
+We are a group of robotic developers from research institutes, schools, and robotics enterprises.
+We hope `EOS` can unite the strengths of different aspects to accelerate robot development and shorten the communication path between developers and end users.
 
 ## Roadmap
 
@@ -104,10 +104,10 @@ We hope `EOS` can unite the strength from different aspects to accelerate robot 
 
 
 1. **Estabiliing a package manager tool for the robot development**
-   - [ ] A package image source
+   - [X] A package image source
    - [ ] A client for package management
-     - [ ] **Kernel Layer**: Integrate core system libraries to ensure system stability and compatibility.
-        - [ ] A platform based on the `Copr` to collect packages
+     - [X] **Kernel Layer**: Integrate core system libraries to ensure system stability and compatibility.
+        - [X] A platform based on the `Copr` to collect packages
      - [ ] **EI Translator (Embodied Intelligence Translator)**: Convert kernel-layer libraries into internal libraries for the middleware layer, facilitating seamless integration across multiple system layers, including ROS/Dart.
      - [ ] **Middleware Layer:**
        - [ ] **ROS**: Provide middleware support for the Robot Operating System, enhancing automation and robotics development capabilities.
@@ -116,12 +116,12 @@ We hope `EOS` can unite the strength from different aspects to accelerate robot 
    - [ ] Realtime ability
      - [ ] Adapt ROS
      - [ ] Adapt Dora
-     - [ ] Adapt Ethercat protocol
-   - [ ] Adaptation and Optimization for Domestic Chips
-     - [X] X86 Series
+     - [ ] Adapt EtherCAT protocol
+   - [ ] Adaptation and optimization for domestic Chips
+     - [X] x86 Series
      - [X] ARM Series
-     - [X] Loongarch (Works on the signal CPU core)
-     - [ ] RISCV
+     - [X] LoongArch (Works on the single CPU core)
+     - [ ] RISC-V
 3. **Development of upper-layer applications based on the RROS kernel**
    - [ ] Provide a rich API to support application developers in fully leveraging the powerful features of the RROS kernel, accelerating application development and deployment.
-   - [ ] Accelerate the applications with the RROS APIS.
+   - [ ] Accelerate the applications with the RROS APIs.
