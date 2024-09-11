@@ -100,8 +100,7 @@ We hope `EOS` can unite the strengths of different aspects to accelerate robot d
 
 ## Roadmap
 
-![image](https://github.com/user-attachments/assets/09b1fe96-bae6-4f76-bc76-7f911dbe701e)
-
+![image](https://github.com/user-attachments/assets/5c7addf2-8b04-47ea-aa35-ccc7cbc8134c)
 
 1. **Estabiliing a package manager tool for the robot development**
    - [X] A package image source
