@@ -15,6 +15,9 @@ Specifically, there are three important steps:
    - Improve the RROS ability in the robot development
    - Optimize the package performance in the package platform
 
+![image](https://github.com/user-attachments/assets/87a4dd65-8a43-49e3-bf0a-812f4374b5f8)
+
+
 ## Usage
 
 [Instructions on how to use the system go here.]
