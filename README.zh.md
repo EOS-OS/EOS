@@ -27,8 +27,7 @@
 
 ## 路线图
 
-![image](https://github.com/user-attachments/assets/1bb1c174-440d-4049-810c-8c6d196f7578)
-
+![image](https://github.com/user-attachments/assets/c168d4d0-1ef5-49b0-baa6-bb8c53914a69)
 
 1. **建立机器人开发的包管理工具**
    - [ ] 包镜像源
