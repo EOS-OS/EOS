@@ -4,3 +4,6 @@
 [submodule "src/spatial_intelligence"]
 	path = src/spatial_intelligence
 	url = https://github.com/kuibu/spatial_intelligence.git
+[submodule "src/embodied-intelligence"]
+	path = src/embodied-intelligence
+	url = https://github.com/kuibu/embodied-intelligence.git
