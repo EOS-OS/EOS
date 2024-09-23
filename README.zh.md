@@ -18,7 +18,75 @@
 
 ## 贡献
 
-[为项目做出贡献的指南将放在这里。]
+### 如何贡献您的软件包到用户仓
+EOS 用户软件仓目前使用Copr项目构建。如果您已经很熟悉Copr，可以挑过这部分教程直接使用EOS用户软件仓。
+#### 准备工作
+EOS的用户仓基于fedora-copr项目构建，您可以通过copr官方文档获得对copr使用更详细的指导。
+首先注册一个fedora账号[Fedora Accounts (fedoraproject.org)](https://accounts.fedoraproject.org/)。
+进入用户软件仓[首页](https://eos.eaishow.com)，使用fedora ID进行登录。
+
+<img width="1616" alt="1725976528436" src="https://github.com/user-attachments/assets/17b0fdad-509e-4f7a-bcc5-7e62e71a45ac">
+
+登录成功后进入个人界面：
+
+![image-20240910215916777](https://github.com/user-attachments/assets/307899c3-a23c-42b1-9072-05b07447e40b)
+
+
+#### 新建项目
+点击 `New Project` 按钮创建新项目，填写项目名(Project Name)，选择需要的软件包构建环境(Chroots)，并根据需要配置其他可选项。
+
+![image-20240910220838008](https://github.com/user-attachments/assets/4b52d63c-782b-4a16-ac2e-dc04cfc275d1)
+
+配置完成后点击 `Create` 创建项目。
+
+<img width="937" alt="1725977723240" src="https://github.com/user-attachments/assets/dafe396c-bbd0-4e64-9182-d0d5fdcee720">
+
+#### 构建软件包
+在项目主页选择 `Builds` ，点击 `New Build` 。
+
+<img width="609" alt="1725978624151" src="https://github.com/user-attachments/assets/856d0a0e-f512-47d8-9a2e-17a09d0028b4">
+
+这里我们直接通过上传 `sprm` 文件的方式进行构建，在 `Upload` 处点击 `Browse` 按钮上传本地 `srpm` 文件。如果您不了解如何构建 `sprm` 包，可以查看该[指导](https://rpm-packaging-guide.github.io/)获取更多细节。
+
+<img width="596" alt="1725978723980" src="https://github.com/user-attachments/assets/09bc7083-e9d6-45dd-a93f-5b390a56a029">
+
+选择本地 `sprm` 文件，点击 `Open` 进行上传。
+
+![image-20240910223352577](https://github.com/user-attachments/assets/87f7e1f4-a45e-4b61-b62e-4c11ec4deb05)
+
+最后点击 `Build` 开始构建软件包。
+
+<img width="620" alt="1725978912129" src="https://github.com/user-attachments/assets/5d7fed52-6224-45d6-b51c-a9b2199301cb">
+
+构建成功。
+
+<img width="628" alt="1725979056196" src="https://github.com/user-attachments/assets/fafc6eab-ce13-4a2e-95ea-a6ae23af576f">
+
+点击对应的 `Build ID` 可以看到构建结果。
+
+<img width="629" alt="1725979186212" src="https://github.com/user-attachments/assets/359aa4b9-7661-4ae7-812f-b0306467afce">
+
+![image-20240910224043177](https://github.com/user-attachments/assets/f8f7e09e-f3c4-423c-9976-9590a56f4ec4)
+
+Copr还支持其他多种方式构建您的软件包，更多细节请查看[官方文档](https://docs.pagure.org/copr.copr/index.html)。
+
+#### 使用个人软件仓
+首先回到项目首页，获取对应版本的仓库配置文件。点击版本号。
+
+<img width="984" alt="1725979554852" src="https://github.com/user-attachments/assets/3e2191fd-70da-4b2e-bea8-3657d2ff8c1e">
+
+复制链接。
+
+<img width="643" alt="1725979632482" src="https://github.com/user-attachments/assets/9a792acf-574e-4924-b2cc-7ac060dceba4">
+
+进入 `/etc/yum/repos.d/` 文件夹下下载对应配置。
+
+<img width="1608" alt="1725980030845" src="https://github.com/user-attachments/assets/691e04e5-aabd-4f05-8f27-58042e09de87">
+
+然后即可进行下载。
+
+![image-20240910225455708](https://github.com/user-attachments/assets/1b0ea018-af71-48c1-8622-6eda2d8d79b5)
+
 ### 在ROS中使用EOS仓库的包
 我们目前提供一个 COPR 平台用于构建 RPM 包，未来将支持 Deb 和其他软件包格式。以 Fedora 为例，您可以通过以下步骤将 EOS 仓库添加到系统中：
 
